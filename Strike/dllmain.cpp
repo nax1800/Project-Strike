@@ -6,25 +6,8 @@ __declspec(dllexport) bool WINAPI DllMain(HINSTANCE hInstDll, DWORD fdwReason, L
     switch (fdwReason)
     {
     case DLL_PROCESS_ATTACH:
-    {
-		Game::Setup();
+	Game::Setup();
         break;
-    }
-
-    case DLL_PROCESS_DETACH:
-    {
-        break;
-    }
-
-    case DLL_THREAD_ATTACH:
-    {
-        break;
-    }
-
-    case DLL_THREAD_DETACH:
-    {
-        break;
-    }
     }
     return true;
 }
